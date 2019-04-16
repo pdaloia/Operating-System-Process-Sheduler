@@ -1,0 +1,7 @@
+1. go through processes and check if any have arrived, if they have put them in ready queue
+2. check if any processors are free, if free add first from ready queue into processor
+3. increment every process in a processors cpu burst once all processors are filled or if there is nothing left in ready queue
+4. increment io burst time of everything in waiting queue
+5. check if any process in wait queue is done io burst, send to ready queue if done io burst
+6. if any process done cpu burst, send to wait queue
+7. if all processes are done, finished
